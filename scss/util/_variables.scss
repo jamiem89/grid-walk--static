@@ -1,0 +1,52 @@
+:root {
+    // Colours
+    --color-brand: #DEE33D;
+    --color-darkest: #222222;
+    --color-lightest: #ffffff;
+    --color-lightest--tint: #F4F4F4;
+
+    // Font declarations
+
+    --font-primary: 'Space Mono', monospace;
+    --font-secondary: 'Nunito', sans-serif;
+
+    // Font styling
+    --h1-font-size: 28px;
+    --h1-letter-spacing: -.05rem;
+    --h1-line-height: 110%;
+
+    @include breakpoint-up(medium) {
+        --h1-font-size: 38px;
+    }
+
+    @include breakpoint-up(large) {
+        --h1-font-size: 48px;
+    }
+
+    --h2-font-size: 38px;
+    --h2-letter-spacing: var(--h2-line-height);
+    --h2-line-height: var(--h2-line-height);
+
+    --h3-font-size: 24px;
+    --h3-letter-spacing: var(--h2-line-height);
+    --h3-line-height: var(--h2-line-height);
+
+    --body-font-size: 15px;
+    --body-letter-spacing: 0.01rem;
+    --body-line-height: 130%;
+    --body-font-size--large: 22px;
+    --body-font-size--small: 12px;
+
+
+    // Spacing and sizing
+    --site-max-width: 1440px;
+
+    --global-padding: 20px;
+    --grid-gap: 20px;
+    --section-spacing: 40px;
+    @include breakpoint-up(large) {
+        --section-spacing: 80px;
+    }
+
+}
+
