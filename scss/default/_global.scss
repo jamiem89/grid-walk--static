@@ -1,3 +1,28 @@
+// Spacing
 .section-spacer {
     margin-bottom: var(--section-spacing);
+}
+
+// BG colors
+
+.bg-light {
+    background-color: var(--color-lightest);
+    color: var(--color-darkest);
+}
+
+// Link styling
+
+.block-link {
+    display: block;
+    overflow: hidden;
+
+    img {
+        transition: transform .6s ease-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.10);
+        }
+    }
 }

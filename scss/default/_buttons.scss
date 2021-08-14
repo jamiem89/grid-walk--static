@@ -3,7 +3,16 @@
     display: inline-block;
     font-size: var(--body-font-size);
     border: 1px solid var(--color-brand);
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
+
+    .btn--dark {
+        border-color: var(--color-darkest);
+        color: var(--color-darkest);
+    }
 
 .btn--fill {
     position: relative;
@@ -31,5 +40,19 @@
         &:after {
             left: 100%;
         }
+    }
+}
+
+.btn--fill-light {
+    background-color: var(--color-brand);
+    color: var(--color-darkest);
+    border-color: var(--color-darkest);
+
+    &:after{
+        background-color: var(--color-lightest);
+    }
+
+    &:hover {
+        color: var(--color-darkest);
     }
 }

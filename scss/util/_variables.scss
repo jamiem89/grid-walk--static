@@ -23,13 +23,22 @@
         --h1-font-size: 48px;
     }
 
-    --h2-font-size: 38px;
+    --h2-font-size: 24px;
     --h2-letter-spacing: var(--h2-line-height);
     --h2-line-height: var(--h2-line-height);
 
+    @include breakpoint-up(medium) {
+        --h2-font-size: 30px;
+    }
+
+    @include breakpoint-up(large) {
+        --h2-font-size: 38px;
+    }
+
+
     --h3-font-size: 24px;
     --h3-letter-spacing: var(--h2-line-height);
-    --h3-line-height: var(--h2-line-height);
+    --h3-line-height: 105%;
 
     --body-font-size: 15px;
     --body-letter-spacing: 0.01rem;
@@ -43,7 +52,7 @@
 
     --global-padding: 20px;
     --grid-gap: 20px;
-    --section-spacing: 40px;
+    --section-spacing: 60px;
     @include breakpoint-up(large) {
         --section-spacing: 80px;
     }
